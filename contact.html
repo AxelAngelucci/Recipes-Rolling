@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img class="img-fluid" src="assets/img/logo.svg" alt="Logo" width="100">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/gallery.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about-us.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/contact.html">Contacto</a>
+            </li>
+          </ul>
+          <a href="/login.html" class="btn btn-outline-success mx-1" type="submit">Ingresar</a>
+          <button href="/404.html" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            type="submit">Suscríbete! 😎</button>
+        </div>
+      </div>
+
+    </nav>
+    <!--Modal Suscribirse-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Suscríbete!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="E-Mail" aria-label="E-Mail"
+                aria-describedby="button-addon2">
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-success">Suscribirme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container row d-flex flex-column flex-sm-row mt-5 my__padding center__container">
+    <div class="col-12 col-md-6">
+      <iframe class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13133.550728050495!2d-58.45094020691888!3d-34.61964207881859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca38df177cfd%3A0x89c1949d632569b6!2sM%C3%ADstica%20caballito!5e0!3m2!1ses-419!2sar!4v1645036246857!5m2!1ses-419!2sar"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="col-10 mx-auto mt-3 mt-lg-0 d-flex flex-column col-md-5">
+      <h1 class="mb-5">Dejanos Tu Consulta</h1>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Completo">
+      </div>
+      <div class="mb-3">
+        <input placeholder="Email" class="form-control" id="exampleFormControlTextarea1" rows="1"></input>
+      </div>
+      <div class="mb-3">
+        <textarea placeholder="Mensaje" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+        <input type="button" class="btn btn-success" value="Enviar">
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer container-fluid bg__gray mt-2">
+    <div class="container d-md-flex">
+      <div class="col-md-3 text-center text-md-start mx-auto my-auto my-lg-4 py-3 py-lg-0">
+        <img src="assets/img/logo.svg" class="col-5 " alt="Logo de la Web">
+      </div>
+      <div class="col-md-3 text-center text-md-start mx-auto">
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4">Conoce Nuestros Servicios</h3>
+        <ul class="list-unstyled">
+          <li class="flex-row justify-content-md-center">
+            <i class="bi bi-geo-alt me-1"></i>
+            <a href="#!">Basavilbaso 1328, Buenos Aires</a>
+          </li>
+          <li class="flex-row justify-content-md-center my-2">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="#!">correo@correo.com</a>
+          </li>
+          <li class="flex-row justify-content-md-center">
+            <i class="bi bi bi-telephone me-1"></i>
+            <a href="#!">+011 4893-9444</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-3 mx-auto text-center text-md-start">
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4">Siguenos!</h3>
+        <div class="d-flex justify-content-between  ml-lg-0 mr-lg-4">
+          <a href="https://www.facebook.com" class="col-2"><img class="social" src="assets/img/social/facebook.png"
+              alt="Logo de Facebook"></a>
+          <a href="https://www.instagram.com" class="col-2"><img class="social" src="assets/img/social/instagram.png"
+              alt="Logo de Instagram"></a>
+          <a href="https://www.twitter.com" class="col-2"><img class="social" src="assets/img/social/twitter.png"
+              alt="Logo de Twitter"></a>
+          <a href="https://www.youtube.com" class="col-2"><img class="social" src="assets/img/social/youtube.png"
+              alt="Logo de Twitter"></a>
+        </div>
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4 ">Suscríbete a Nuestro Newsletter!</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-success" type="button" id="button-addon2">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

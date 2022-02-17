@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Salmón a la Plancha</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img class="img-fluid" src="assets/img/logo.svg" alt="Logo" width="100">
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/gallery.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/about-us.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact.html">Contacto</a>
+          </li>
+        </ul>
+        <a href="/login.html" class="btn btn-outline-success mx-1" type="submit">Ingresar</a>
+        <button href="/404.html" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          type="submit">Suscríbete! 😎</button>
+      </div>
+    </div>
+
+  </nav>
+  <!--Modal Suscribirse-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Suscríbete!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="E-Mail" aria-label="E-Mail"
+              aria-describedby="button-addon2">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-success">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--====================Descripción de la receta ocupando todo el width en la parte superior============================-->
+  <header class="bg__gray">
+    <div class="container my__margin">
+
+
+      <div class="d-md-flex gap-3 py-4">
+        <div class="col-md-5"><img class="img-fluid"
+            src="https://recetinas.com/wp-content/uploads/2020/07/salmon-a-la-plancha.jpg" alt=""></div>
+        <div class="col-md-7">
+          <h1 class="my-2 my-md-0">Salmón a la Plancha</h1>
+          <p>Por <a href="/404.html">Angelucci Axel</a></p>
+          <div class="d-flex">
+            <i class="bi bi-star-fill text-warning me-1"></i>
+            <i class="bi bi-star-fill text-warning me-1"></i>
+            <i class="bi bi-star-fill text-warning me-1"></i>
+            <i class="bi bi-star-fill text-warning me-1"></i>
+            <i class="bi bi-star text-warning me-1"></i>
+            <p class="margin__rating">201 Votaciones</p>
+          </div>
+          <p>El salmón a la plancha es una de las recetas con pescado más fáciles que pueden existir. Básicamente es
+            cocinar a fuego alto con un toque de aceite, sal y limón. No necesitas más nada.</p>
+          <p class="bold">Datos Nutricionales: por porción</p>
+          <div class="d-lg-flex gap-2">
+            <div class="d-flex gap-2">
+              <div class="nutrition__card px-4">
+                <p class="font">kcal</p>
+                <p class="nutrition__card-value font">367</p>
+              </div>
+              <div class="nutrition__card px-4">
+                <p class="font">grasa</p>
+                <p class="nutrition__card-value font">15g</p>
+              </div>
+              <div class="nutrition__card px-4">
+                <p>carbs</p>
+                <p class="nutrition__card-value">12g</p>
+              </div>
+              <div class="nutrition__card px-4">
+                <p>azúcar</p>
+                <p class="nutrition__card-value">10g</p>
+              </div>
+            </div>
+            <div class="d-flex gap-2 my-2 my-md-2 my-lg-0">
+              <div class="nutrition__card px-4">
+                <p>proteínas</p>
+                <p class="nutrition__card-value">30g</p>
+              </div>
+              <div class="nutrition__card px-4">
+                <p>sodio</p>
+                <p class="nutrition__card-value">0.6g</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+  </header>
+
+
+
+  <main class="container  d-md-flex my-4">
+    <!--====================Sección de receta ocupando 8 columnas de la pantalla en Desktop y 12 en mobile/tablet ======================-->
+    <div class="col-md-12 col-lg-8">
+      <div class="d-md-flex col-12">
+        <!--====================Sección de ingredientes ocupando la mitad del contenedor padre en desktop y el 100% en mobile ======================-->
+        <div class="col-md-6 ">
+
+          <h3>Ingredientes</h3>
+          <ul class="list-group list-group-flush col-md-11">
+            <li class="list-group-item px-0">2 piezas de salmón de unos 200-300 gr</li>
+            <li class="list-group-item px-0">2 dientes de ajo (opcional)</li>
+            <li class="list-group-item px-0">1 limón</li>
+            <li class="list-group-item px-0">1 cucharadita de perejil picado</li>
+            <li class="list-group-item px-0">Pimienta negra molida</li>
+            <li class="list-group-item px-0">2 cucharadas de aceite de oliva</li>
+            <li class="list-group-item px-0">Sal</li>
+          </ul>
+        </div>
+        <!--====================Sección de ingredientes ocupando la otra mitad del contenedor padre en desktop y el 100% en mobile ======================-->
+        <div class="col-md-6">
+          <h3 class="mt-3 mt-md-0">Procedimiento</h3>
+          <h5>Paso 1</h5>
+          <p>Comenzaremos secando las piezas de salmón con papel de cocina.</p>
+          <h5>Paso 2</h5>
+          <p>Ponemos a calentar una plancha antiadherente con dos cucharadas de aceite de oliva, las cuales distribuimos
+            bien por toda la base, yo lo hago con una brocha de cocina para asegurarme de que queda bien engrasada.</p>
+          <h5>Paso 3</h5>
+          <p>Mientras se calienta la plancha, condimentamos el salmón añadiéndole sal y pimienta al gusto y un poco de
+            perejil fresco picado</p>
+          <h5>Paso 4</h5>
+          <p>Pelamos y machacamos los dientes de ajo en un mortero y con las manos embadurnamos con ellos las piezas de
+            salmón por ambos lados</p>
+          <h5>Paso 5</h5>
+          <p>Cuando la plancha ya esté caliente, colocamos en ella las piezas de salmón por la parte de la piel.</p>
+          <h5>Paso 6</h5>
+          <p>Cocinamos durante 5-7 minutos, todo depende del grosor que tenga cada pieza.</p>
+          <h5>Paso 7</h5>
+          <p>Volteamos las piezas de salmón con la ayuda de una paleta de cocina y cocinamos durante 3 y 5 minutos más.
+          </p>
+          <h5>Paso 8</h5>
+          <p>Retiramos del fuego y ya tenemos listo nuestro salmón a la plancha. Solo queda servirlo a la mesa
+            acompañado de una ensalada, un arroz o unas patatas. No te olvides de poner unos trozos de limón para que
+            cada comensal aderece el salmón a su gusto. Buen provecho!!</p>
+        </div>
+      </div>
+      <!--====================Sección de Video ocupando todo el contenedor padre en todas las resoluciones ======================-->
+      <div>
+        <iframe class="col-12" width="560" height="315" src="https://www.youtube.com/embed/rDOdXAm2RKg"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <!--====================Sección de Comentarios ocupando todo el contenedor padre en todas las resoluciones ======================-->
+      <div>
+
+        <div class="bg__gray py-3 my-3">
+          <h5 class="text-center">Elija el tipo de mensaje que quiere publicar</h5>
+          <div class="d-flex justify-content-center gap-4 my-3">
+            <div class="text-center fs-5 bg-white col-3 col-md-2 py-4 color__hover" style="color: #645a8c">
+              <i class="bi bi-chat-fill"></i>
+              <p class="m-0">Pregunta</p>
+            </div>
+            <div class="text-center fs-5 bg-white col-3 col-md-2 py-4 color__hover" style="color: #645a8c">
+              <i class="bi bi-chat-square-quote-fill"></i>
+              <p class="m-0">Comentario</p>
+            </div>
+            <div class="text-center fs-5 bg-white col-3 col-md-2 py-4 color__hover" style="color: #645a8c">
+              <i class="bi bi-book-fill"></i>
+              <p class="m-0">Tip</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Comentario</label>
+          <div class="col-12 d-flex justify-content-end">
+            <button type="button" class="btn btn-outline-success my-3">Publicar</button>
+          </div>
+
+        </div>
+        <div class="comment__card col-12 border-bottom border-2">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class="rounded-circle" src="assets/img/recipes/comments/salt-bae.jpg" alt="Foto de perfil">
+              <h2 class="my-0 mx-2 fs-4">Salt Bae</h2>
+
+            </div>
+            <p class="hs-5 my-0" style="color: #645a8c">hace 5 días</p>
+
+          </div>
+          <p class="py-2">Pensaré en agragarlo a mí menú del día... 😎</p>
+          <button type="button" class="btn btn-outline-success mb-3">Responder</button>
+        </div>
+
+        <div class="comment__card col-12 border-bottom border-2 mt-3">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class="rounded-circle" src="assets/img/recipes/comments/betular.jpg" alt="Foto de perfil">
+              <h2 class="my-0 mx-2 fs-4">Betular</h2>
+
+            </div>
+            <p class="hs-5 my-0" style="color: #645a8c">hace 5 días</p>
+
+          </div>
+          <p class="py-2">Gracias por tus recetas faciles y económicas 🙏🙏🙏💜 un saludo muy especial desde Argentina!
+          </p>
+          <button type="button" class="btn btn-outline-success mb-3">Responder</button>
+        </div>
+        <div class="comment__card col-12 mt-3">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+              <img class="rounded-circle" src="assets/img/recipes/comments/martitegui.jpg" alt="Foto de perfil">
+              <h2 class="my-0 mx-2 fs-4">Germán Martitegui</h2>
+
+            </div>
+            <p class="hs-5 my-0" style="color: #645a8c">hace 5 días</p>
+
+          </div>
+          <p class="py-2">Preferiría cortarme las manos antes que preparar una de sus recetas.</p>
+          <button type="button" class="btn btn-outline-success mb-3">Responder</button>
+        </div>
+      </div>
+
+    </div>
+
+    </div>
+
+    <!--====================Sección de Relacionados ocupando el restante de las 8 columnas del main en desktop y 12 columnas en mobile======================-->
+    <aside class="col-4 mx-4 gap-3 d-none d-lg-block">
+      <img class="col-12"
+        src="https://trendingmagazine.mx/wp-content/uploads/2019/04/sartenes-presto-recetas-trending-magazine-revista-puebla-1024x761.jpg"
+        alt="">
+      <h4 class="my-3">Te Podría Gustar</h4>
+      <div class="card d-flex align-items-center col-md-12 border-0 rounded bg-light shadow">
+        <div class="d-md-flex align-items-center">
+          <div class="col-sm-4 d-flex container-sm me-md-5">
+            <img class="card-img img-resposive " style="width: auto; height: 90px; margin: 0 auto"
+              src="assets/img/recipes/griega.png" alt="Suresh Dasari Card">
+          </div>
+          <div class="col-sm-8">
+            <div class="card-body">
+              <h5 class="card-title">Ensalada Mixta</h5>
+              <a href="/recipe.html" class="btn btn-outline-success">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card d-flex align-items-center col-md-12 border-0 rounded bg-light shadow my-4">
+        <div class="d-md-flex align-items-center">
+          <div class="col-sm-4 d-flex container-sm me-md-5">
+            <img class="card-img img-resposive " style="width: auto; height: 90px; margin: 0 auto"
+              src="assets/img/recipes/mariscos.png" alt="Sopa de Mariscos">
+          </div>
+          <div class="col-sm-8">
+            <div class="card-body">
+              <h5 class="card-title">Sopa de Mariscos</h5>
+              <a href="/recipe.html" class="btn btn-outline-success">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card d-flex align-items-center col-md-12 border-0 rounded bg-light shadow">
+        <div class="d-md-flex align-items-center">
+          <div class="col-sm-4 d-flex container-sm me-md-5">
+            <img class="card-img img-resposive " style="width: auto; height: 90px; margin: 0 auto"
+              src="assets/img/recipes/salmon.png" alt="Salmón al Grill">
+          </div>
+          <div class="col-sm-8">
+            <div class="card-body">
+              <h5 class="card-title">Salmón al Grill</h5>
+              <a href="/recipe.html" class="btn btn-outline-success">Ver Receta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </aside>
+
+
+  </main>
+  <footer class="page-footer container-fluid bg__gray">
+    <div class="container d-md-flex">
+      <div class="col-md-3 text-center text-md-start mx-auto my-auto my-lg-4 py-3 py-lg-0">
+        <img src="assets/img/logo.svg" class="col-5 " alt="Logo de la Web">
+      </div>
+      <div class="col-md-3 text-center text-md-start mx-auto">
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4">Conoce Nuestros Servicios</h3>
+        <ul class="list-unstyled">
+          <li class="flex-row justify-content-md-center">
+            <i class="bi bi-geo-alt me-1"></i>
+            <a href="#!">Basavilbaso 1328, Buenos Aires</a>
+          </li>
+          <li class="flex-row justify-content-md-center my-2">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="#!">correo@correo.com</a>
+          </li>
+          <li class="flex-row justify-content-md-center">
+            <i class="bi bi bi-telephone me-1"></i>
+            <a href="#!">+011 4893-9444</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-3 mx-auto text-center text-md-start">
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4">Siguenos!</h3>
+        <div class="d-flex justify-content-between  ml-lg-0 mr-lg-4">
+          <a href="https://www.facebook.com" class="col-2"><img class="social" src="assets/img/social/facebook.png"
+              alt="Logo de Facebook"></a>
+          <a href="https://www.instagram.com" class="col-2"><img class="social" src="assets/img/social/instagram.png"
+              alt="Logo de Instagram"></a>
+          <a href="https://www.twitter.com" class="col-2"><img class="social" src="assets/img/social/twitter.png"
+              alt="Logo de Twitter"></a>
+          <a href="https://www.youtube.com" class="col-2"><img class="social" src="assets/img/social/youtube.png"
+              alt="Logo de Twitter"></a>
+        </div>
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4 ">Suscríbete a Nuestro Newsletter!</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-success" type="button" id="button-addon2">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  </footer>

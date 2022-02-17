@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Galeria de Fotos</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/icon.png">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img class="img-fluid" src="assets/img/logo.svg" alt="Logo" width="100">
+
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/gallery.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about-us.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/contact.html">Contacto</a>
+            </li>
+          </ul>
+          <a href="/login.html" class="btn btn-outline-success mx-1" type="submit">Ingresar</a>
+          <button href="/404.html" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+            type="submit">Suscríbete! 😎</button>
+        </div>
+      </div>
+
+    </nav>
+    <!--Modal Suscribirse-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Suscríbete!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="E-Mail" aria-label="E-Mail"
+                aria-describedby="button-addon2">
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-success">Suscribirme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="text-center mt-5 pt-5">
+      <h2>No tienes ganas de cocinar?</h2>
+    </div>
+    <div class="container-lg">
+      <div class="row row-cols-2 row-cols-md-2 row-cols-lg-4 align-items-center my-3">
+        <!-- Receta 1 -->
+        <div class="col-12 col-md-6 col-lg-3 text-center d-flex flex-column">
+          <div class="card mt-5 text-center card-scale">
+            <img src="./assets/img/gallery/food-1.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">SOPA DE MARISCOS</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column">
+            <img src="./assets/img/gallery/food-2.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">DESAYUNO MEDITERRANEO</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column">
+            <img src="./assets/img/gallery/food-3.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">MARISCOS AL LIMÓN</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column">
+            <img src="./assets/img/gallery/food-4.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">ENSALADA DE LA CASA</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 5 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column">
+            <img src="./assets/img/gallery/food-5.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">ENSALADA MIXTA</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 6 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column"">
+                      <img src=" ./assets/img/gallery/food-6.png" class="card-img-top p-3 m-1 align-self-center"
+            alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">BIFE DE CHORIZO</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column">
+            <img src="./assets/img/gallery/food-7.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">ENSALADA DE HUACAMOLE</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+        <!-- Receta 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card mt-5 text-center card-scale d-flex flex-column">
+            <img src="./assets/img/gallery/food-8.png" class="card-img-top p-3 m-1 align-self-center"
+              alt="Imagen Receta 1" style="border-radius: 20px;">
+            <div class="card-body">
+              <h5 class="card-title">SALMÓN CON ESPARRAGOS</h5>
+              <p class="card-text"></p>
+              <a href="/404.html" class="btn btn-outline-success btn-cursor">Pedir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer container-fluid bg__gray mt-2">
+    <div class="container d-md-flex">
+      <div class="col-md-3 text-center text-md-start mx-auto my-auto my-lg-4 py-3 py-lg-0">
+        <img src="assets/img/logo.svg" class="col-5 " alt="Logo de la Web">
+      </div>
+      <div class="col-md-3 text-center text-md-start mx-auto">
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4">Conoce Nuestros Servicios</h3>
+        <ul class="list-unstyled">
+          <li class="flex-row justify-content-md-center">
+            <i class="bi bi-geo-alt me-1"></i>
+            <a href="#!">Basavilbaso 1328, Buenos Aires</a>
+          </li>
+          <li class="flex-row justify-content-md-center my-2">
+            <i class="bi bi-envelope me-1"></i>
+            <a href="#!">correo@correo.com</a>
+          </li>
+          <li class="flex-row justify-content-md-center">
+            <i class="bi bi bi-telephone me-1"></i>
+            <a href="#!">+011 4893-9444</a>
+          </li>
+
+        </ul>
+      </div>
+      <div class="col-md-3 mx-auto text-center text-md-start">
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4">Siguenos!</h3>
+        <div class="d-flex justify-content-between  ml-lg-0 mr-lg-4">
+          <a href="https://www.facebook.com" class="col-2"><img class="social" src="assets/img/social/facebook.png"
+              alt="Logo de Facebook"></a>
+          <a href="https://www.instagram.com" class="col-2"><img class="social" src="assets/img/social/instagram.png"
+              alt="Logo de Instagram"></a>
+          <a href="https://www.twitter.com" class="col-2"><img class="social" src="assets/img/social/twitter.png"
+              alt="Logo de Twitter"></a>
+          <a href="https://www.youtube.com" class="col-2"><img class="social" src="assets/img/social/youtube.png"
+              alt="Logo de Twitter"></a>
+        </div>
+        <h3 class="font-weight-bold fs-5 mt-3 mb-4 ">Suscríbete a Nuestro Newsletter!</h3>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username"
+            aria-describedby="button-addon2">
+          <button class="btn btn-outline-success" type="button" id="button-addon2">Suscribirme</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+</body>
